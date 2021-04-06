@@ -16,7 +16,7 @@ Parameters:
     Description: Email address you want contact form submittions to go to
   ReCaptchaSecret:
     Type: String
-    Description: Your Google reCAPTCHA secret
+    Description: Your Google reCAPTCHA secret (get your own at https://www.google.com/recaptcha/admin)
 Resources:
 
   #
@@ -176,7 +176,7 @@ Resources:
               req.write(postData);
               req.end();
           };
-      Runtime: nodejs6.10
+      Runtime: nodejs12.x
 
   #
   # Create the API Gateway
